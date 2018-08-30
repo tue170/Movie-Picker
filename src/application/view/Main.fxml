@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0"  xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/background1.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="dataBaseButton" layoutX="498.0" layoutY="400.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="237.0" style="-fx-background-color: rgb(110,249,221);">
+         <font>
+            <Font name="Leelawadee UI Bold" size="17.0" />
+         </font></Button>
+      <Button fx:id="csvFileButton" layoutX="498.0" layoutY="318.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="237.0" style="-fx-background-color: rgb(246,7,187);">
+         <font>
+            <Font name="Leelawadee UI Bold" size="17.0" />
+         </font>
+      </Button>
+      <Label layoutX="529.0" layoutY="191.0" text="Welcome" textFill="WHITE">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

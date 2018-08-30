@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LibraryController">
+   <children>
+      <ImageView fitHeight="617.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/library.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="submit" layoutX="636.0" layoutY="332.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="130.0" text="select file" textFill="#000000ac">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <TextField fx:id="file" layoutX="524.0" layoutY="138.0" prefHeight="39.0" prefWidth="235.0" promptText="New File Name" />
+      <Button fx:id="add" layoutX="625.0" layoutY="189.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="130.0" text="add new file" />
+      <Button fx:id="delete" layoutX="116.0" layoutY="533.0" mnemonicParsing="false" opacity="0.51" prefHeight="39.0" prefWidth="200.0" style="-fx-background-color: gray;" text="delete selected file" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Text fill="WHITE" layoutX="21.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library">
+         <font>
+            <Font name="Leelawadee UI Bold" size="40.0" />
+         </font>
+      </Text>
+      <ListView fx:id="LibraryList" layoutX="25.0" layoutY="77.0" prefHeight="447.0" prefWidth="382.0" />
+      <Label layoutX="465.0" layoutY="148.0" text="Name:" textFill="WHITE">
+         <font>
+            <Font name="Leelawadee UI Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="427.0" layoutY="77.0" text="Create New File" textFill="WHITE">
+         <font>
+            <Font name="Leelawadee UI Bold" size="17.0" />
+         </font>
+      </Label>
+      <ToolBar layoutX="738.0" opacity="0.39" prefHeight="53.0" prefWidth="56.0" style="-fx-background-color: transparent;">
+         <items>
+            <ImageView fitHeight="36.0" fitWidth="41.0" onMouseClicked="#showMain" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.6;">
+               <image>
+                  <Image url="@../../../bin/application/view/images/homeIcon.png" />
+               </image>
+            </ImageView>
+         </items>
+      </ToolBar>
+      <Label fx:id="deleteErr" layoutX="340.0" layoutY="539.0" prefHeight="27.0" text="Label" textFill="RED">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="selectErr" layoutX="530.0" layoutY="286.0" prefHeight="27.0" text="Label" textFill="RED">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MovieListController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/library.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="submit" layoutX="631.0" layoutY="317.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="130.0" text="add movie" />
+      <TextField fx:id="MovieNameTextField" layoutX="527.0" layoutY="122.0" prefHeight="39.0" prefWidth="235.0" />
+      <Text fx:id="movieText" fill="WHITE" layoutX="465.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:">
+         <font>
+            <Font name="Leelawadee UI Bold" size="17.0" />
+         </font></Text>
+      <TextField fx:id="location" layoutX="527.0" layoutY="256.0" prefHeight="39.0" prefWidth="235.0" text=" " />
+      <Text fill="WHITE" layoutX="21.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Movie List">
+         <font>
+            <Font name="Leelawadee UI Bold" size="40.0" />
+         </font>
+      </Text>
+      <ListView fx:id="MList" layoutX="25.0" layoutY="77.0" prefHeight="447.0" prefWidth="385.0" />
+      <Text fx:id="locationText" fill="WHITE" layoutX="444.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location:" wrappingWidth="78.0">
+         <font>
+            <Font name="Leelawadee UI Bold" size="17.0" />
+         </font></Text>
+      <ComboBox fx:id="Selection" layoutX="527.0" layoutY="192.0" prefHeight="39.0" prefWidth="235.0" promptText="Movie Genre:" />
+      <Label layoutX="427.0" layoutY="77.0" text="Enter a movie" textFill="WHITE">
+         <font>
+            <Font name="Leelawadee UI Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="464.0" layoutY="199.0" text="Genre:" textFill="WHITE">
+         <font>
+            <Font name="Leelawadee UI Bold" size="17.0" />
+         </font>
+      </Label>
+      <ToolBar layoutX="695.0" layoutY="4.0" opacity="0.39" prefHeight="53.0" prefWidth="98.0" style="-fx-background-color: transparent;">
+         <items>
+            <ImageView fitHeight="36.0" fitWidth="41.0" onMouseClicked="#showLibrary" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.6;">
+               <image>
+                  <Image url="@images/libraryIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="41.0" onMouseClicked="#showMain" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.6;">
+               <image>
+                  <Image url="@images/homeIcon.png" />
+               </image>
+            </ImageView>
+         </items>
+      </ToolBar>
+      <Button fx:id="next" layoutX="716.0" layoutY="542.0" mnemonicParsing="false" opacity="0.59" style="-fx-background-color: transparent;" text="Next" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="delete" layoutX="97.0" layoutY="542.0" mnemonicParsing="false" opacity="0.51" prefHeight="39.0" prefWidth="235.0" style="-fx-background-color: gray;" text="delete selected movie" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="deleteErr" layoutX="353.0" layoutY="554.0" text="Label" textFill="#eb0d0d">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="nextErr" layoutX="544.0" layoutY="493.0" text="Label" textFill="#eb0d0d">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

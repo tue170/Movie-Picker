@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane layoutX="-1.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.GenreController">
+   <children>
+      <ImageView fitHeight="609.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Genre1.jpg" />
+         </image>
+      </ImageView>
+      <GridPane fx:id="gridPane" alignment="CENTER" layoutX="33.0" layoutY="101.0" prefHeight="310.0" prefWidth="757.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" minWidth="10.0" prefWidth="178.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="197.0" minWidth="0.0" prefWidth="187.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="181.0" minWidth="10.0" prefWidth="170.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="191.0" minHeight="10.0" prefHeight="89.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="153.0" minHeight="2.0" prefHeight="90.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="98.0" minHeight="10.0" prefHeight="98.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="ButtonG2" mnemonicParsing="false" onAction="#handle" prefHeight="39.0" prefWidth="159.0" text="Children" GridPane.columnIndex="1" />
+            <Button fx:id="ButtonG4" mnemonicParsing="false" onAction="#handle" prefHeight="39.0" prefWidth="159.0" text="Drama" GridPane.rowIndex="1" />
+            <Button fx:id="ButtonG5" mnemonicParsing="false" onAction="#handle" prefHeight="39.0" prefWidth="159.0" text="Fantasy" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="ButtonG7" mnemonicParsing="false" onAction="#handle" prefHeight="39.0" prefWidth="159.0" text="Musical" GridPane.rowIndex="2" />
+            <Button fx:id="ButtonG8" mnemonicParsing="false" onAction="#handle" prefHeight="39.0" prefWidth="159.0" text="Romance" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="ButtonG3" mnemonicParsing="false" onAction="#handle" prefHeight="39.0" prefWidth="159.0" text="Comedy" GridPane.columnIndex="2" />
+            <Button fx:id="ButtonG6" mnemonicParsing="false" onAction="#handle" prefHeight="39.0" prefWidth="159.0" text="Horror" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="ButtonG1" mnemonicParsing="false" onAction="#handle" prefHeight="39.0" prefWidth="159.0" text="Action" />
+            <Button fx:id="ButtonG9" mnemonicParsing="false" onAction="#handle" prefHeight="39.0" prefWidth="159.0" text="Other" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Button fx:id="ButtonF" layoutX="220.0" layoutY="421.0" mnemonicParsing="false" onAction="#all" prefHeight="39.0" prefWidth="360.0" text="Generate a movie Regardless of Genre" />
+      <Text fill="WHITE" layoutX="27.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a Genre">
+         <font>
+            <Font name="Leelawadee UI Bold" size="30.0" />
+         </font>
+      </Text>
+      <ToolBar layoutX="662.0" opacity="0.39" prefHeight="55.0" prefWidth="136.0" style="-fx-background-color: transparent;">
+         <items>
+            <ImageView fitHeight="36.0" fitWidth="41.0" onMouseClicked="#showMovielist" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.6;">
+               <image>
+                  <Image url="@images/movieListIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="41.0" onMouseClicked="#showLibrary" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.6;">
+               <image>
+                  <Image url="@images/libraryIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="41.0" onMouseClicked="#showMain" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.6;">
+               <image>
+                  <Image url="@images/homeIcon.png" />
+               </image>
+            </ImageView>
+         </items>
+      </ToolBar>
+          </children>
+</AnchorPane>

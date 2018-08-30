@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="604.0" prefWidth="793.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MovieController">
+   <children>
+      <ImageView fitHeight="610.0" fitWidth="842.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/Movie.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="24.0" layoutY="14.0" prefHeight="95.0" prefWidth="353.0" text="Your Movie is" textFill="WHITE">
+         <font>
+            <Font name="Leelawadee UI Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="movieName" alignment="CENTER" layoutX="411.0" layoutY="274.0" prefHeight="119.0" prefWidth="396.0" text="Label" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font></Label>
+      <Button fx:id="generate" layoutX="520.0" layoutY="467.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="243.0" text="Regenerate Random Movie" />
+      <Label fx:id="locationName" alignment="CENTER" contentDisplay="CENTER" layoutX="520.0" layoutY="383.0" prefHeight="39.0" prefWidth="279.0" text="Label">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <ToolBar layoutX="607.0" opacity="0.39" prefHeight="39.0" prefWidth="192.0" style="-fx-background-color: transparent;">
+         <items>
+            <ImageView fx:id="imdbIcon" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#showImdb" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/imdbIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView  fx:id="movieListIcon" fitHeight="36.0" fitWidth="41.0" onMouseClicked="#showMovielist" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.6;">
+               <image>
+                  <Image url="@images/movieListIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="libraryIcon" fitHeight="36.0" fitWidth="41.0" onMouseClicked="#showLibrary" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: 0.6;">
+               <image>
+                  <Image url="@images/libraryIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="homeIcon" fitHeight="36.0" fitWidth="41.0" onMouseClicked="#showMain" pickOnBounds="true" preserveRatio="true" style="-fx-opacity: .6;">
+               <image>
+                  <Image url="@images/homeIcon.png" />
+               </image>
+            </ImageView>
+         </items>
+      </ToolBar>
+      <Label fx:id="movieGenre" alignment="CENTER" layoutX="547.0" layoutY="242.0" prefHeight="45.0" prefWidth="267.0" text="Label">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="regenerateFromBase" layoutX="520.0" layoutY="467.0" mnemonicParsing="false" onAction="#regenerate" prefHeight="39.0" prefWidth="243.0" text="Generate Again!" />
+   </children>
+</AnchorPane>
